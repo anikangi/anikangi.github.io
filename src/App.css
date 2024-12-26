@@ -1,0 +1,722 @@
+/* Global CSS */
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: "PT Serif", serif;
+  -webkit-font-smoothing: "PT Serif", serif;
+  -moz-osx-font-smoothing: "PT Serif", serif;
+  font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0
+}
+
+:root {
+  --darkgreen: #152603;
+  --mutedblue: #487E99;
+  --aliceblue: #E6F3F9;
+  --mossgreen: #224A42;
+  --brightblue: #0059CF;
+  --body-font: "PT Serif", serif;
+  --heading-font: "Marcellus", serif;
+
+  /* TEMP: will be removed*/
+  --primary: #5e3bee;
+    --heading-color: #282938;
+    --bg-shade: #f5fcff;
+    --github: #e62872;
+    --darkblue: #1c1e53;
+    --black: #000000;
+    --white: #ffffff;}
+
+.btn {
+  font-family: "PT Serif", serif;
+  display: inline-block;
+  padding: 8px 20px;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  transition: background-color 0.5s;
+  -webkit-transition: background-color 0.5s;
+  -moz-transition: background-color 0.5s;
+  -ms-transition: background-color 0.5s;
+  -o-transition: background-color 0.5s;
+}
+
+.btn-outline-primary {
+  color: var(--darkgreen);
+  background-color: var(--aliceblue);
+  border: 1px solid var(--darkgreen);
+}
+
+.btn-outline-primary:hover {
+  color: var(--white);
+  background-color: var(--darkgreen);
+}
+
+.btn-primary {
+  color: var(--white);
+  background-color: var(--primary);
+  border: 1px solid var(--primary)
+}
+
+.btn-primary:hover {
+  color: var(--primary);
+  background-color: var(--white);
+}
+/* Global CSS Ends */
+
+/* Main Headings: */
+
+/* Heading 1 */
+h1 {
+  color: var(--darkgreen);
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 67px;
+}
+
+/* Heading 2 */
+h2 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 58px;
+}
+
+/* Heading 3 */
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 34px;
+}
+
+#logo {
+    max-width: 70px;
+      /* Maximum width of the logo */
+      max-height: 70px;
+      /* Maximum height of the logo */
+      width: auto;
+      /* Maintain aspect ratio */
+      height: auto;
+      /* Maintain aspect ratio */
+        position: fixed;
+          /* Ensures the image stays fixed in the background */
+    object-fit: cover;
+      top: 0;
+        left: 75px;
+
+}
+
+/* Pragraphs text large medium small */
+/* Body 1 */
+.text-lg {
+  color: var(--darkcolor);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+/* Body 2 */
+.text-md {
+  color: var(--darkcolor);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+/* Body 3 */
+.text-sm {
+  color: var(--black);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+/* Section Titles */
+/* About Me */
+.section--title {
+  color: var(--heading-color);
+  font-size: 21px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+  display: flex;
+  align-items: flex-start;
+}
+
+/* Projects, Work & Contact Me */
+.sub--title {
+  color: var(--heading-color);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+/* Section Titles Ends */
+
+/* Navbar Style Start */
+
+.navbar {
+  display:flex;
+  justify-content:space-between;
+  align-items: center;
+padding: 0px 85.333px 10px 85.333px;
+  /* Top: 15px, Right: 85.333px, Bottom: 10px, Left: 85.333px */
+  background: var(--aliceblue);
+  /* box-shadow: 0px 5.333px 80px 0 rgba(0, 0, 0, 0.1);  */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; /* Ensures navbar stays above other content */
+  text-transform: uppercase;
+}
+
+.navbar--items > ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 42.667px;
+  text-decoration: none;
+}
+
+.navbar--items ul > li > a {
+  text-decoration: none;
+}
+
+/* Navbar Content */
+.navbar--content {
+  color: var(--darkcolor);
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+.navbar--content:hover {
+  color: var(--brightblue);
+  /* Color when hovered */
+  /* Optional: underline on hover */
+}
+
+.navbar--active--content {
+  color: var(--brightblue);
+}
+
+/* Navbar Style Ends */
+
+/* Landing Section Style */
+
+.landing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh; /* Full-screen height */
+  padding-top: 50px;
+  padding-bottom: 80px;
+  background-color: var(--aliceblue);
+  color: var(--darkgreen); /* Match font color */
+}
+
+.landing--title {
+  font-size: 6rem; /* Increase the font size */
+  font-weight: 100;
+  font-family: "Marcellus", serif;
+  width: 100%; /* Full width */
+  text-align: center; /* Center-align the title */
+  transform: scaleY(1.2);
+    /* Vertically scales the font */
+  letter-spacing: 2px;
+      /* Adjust letter spacing */
+}
+
+.landing--description {
+  font-size: 1.2rem; /* Subtitle font size */
+  font-weight: 400; /* Normal weight for description */
+  margin: 10px 0 0;
+  font-family: "PT Serif", serif;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.landing--content--box {
+  width: 87%; /* Full width */
+  margin: 20px auto; /* Center horizontally */
+  padding: 20px; /* Add spacing */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align the content */
+  justify-content: left; /* Push content toward the bottom */
+  position: relative;
+  background-image: url('assets/landing-background-img.jpg');
+  background-size: cover; /* Ensures the image covers the entire container */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  height: 20000px; /* Full viewport height */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+      /* Adds a shadow to the border */
+}
+
+.landing--content--box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.65);
+  /* Semi-transparent black overlay */
+  z-index: 1;
+  /* Place above the background image */
+}
+
+
+
+.landing--name, .landing--description, .landing--hello {
+        left: 30px;
+          /* Position 20px from the left */
+  position: absolute;
+  /* Keep text above the overlay */
+  z-index: 2;
+  /* Higher than the overlay */
+  color: #ffffff;
+  /* White text for contrast */
+    font-size: 1.5rem;
+      /* Slightly smaller font size for description */
+      font-weight: 300;
+      font-family: "PT Serif", serif;
+      /* White text for contrast */
+      text-align: left;
+      /* Align description to the left */
+      margin: 20px 0 0 20px;
+      /* Add some spacing around the text */
+      max-width: 40%;
+}
+
+.landing--hello {
+  font-size: 1rem;
+    bottom: 305px;
+}
+
+.landing--name {
+  bottom: 210px;
+  font-size: 6rem;
+  font-family: var(--heading-font);
+  font-weight: 500;
+  letter-spacing: 2px;
+  font-style: italic;
+}
+
+.landing--description {
+
+    bottom: 50px;
+      /* Position 20px from the bottom */
+
+}
+/* Landing Section Style Ends */
+
+/* Projects Section Style */
+
+.projects--section {
+  display: flex;
+  padding: 149.33px 85.33px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 106.667px;
+}
+
+.projects--section--heading {
+  color: var(--darkgreen);
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 77px;
+}
+
+.projects--section--container {
+  display: grid;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 42.6px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.projects--section--card {
+  display: flex;
+  padding: 32px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  flex: 1 0 0;
+  border-radius: 10.6px;
+  background: var(--aliceblue);
+  min-height: 250px;
+  height: 100%;
+}
+
+.projects--section--card:hover {
+  border-bottom: 4px solid var(--brightblue);
+}
+
+.projects--section--card:hover .projects--section--description {
+  color: var(--darkblue);
+}
+
+.projects--section--img {
+  display: flex;
+  padding: 13.3px;
+  justify-content: center;
+  align-items: center;
+  gap: 13.3px;
+  border-radius: 10.6px;
+  background: var(--aliceblue);
+    width: 40px;
+      /* Set specific width */
+      height: 40px;
+      /* Set specific height */
+  box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.projects--section--img img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  /* Scale without distortion */
+}
+
+.projects--section--card--content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+}
+
+.projects--section--title {
+  color: var(--darkgreen);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 45px;
+}
+
+.projects--section--description {
+  color: var(--mutedblue);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+}
+/* Projects Style Ends */
+
+/* Work Section Style */
+.work--section {
+  display: flex;
+  padding: 0 85.33px 50px;
+  /* Removed top padding, kept left, right, and bottom */
+  flex-direction: row;
+  gap: 400px;
+}
+
+.work--section--heading {
+  color: var(--darkgreen);
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 77px;
+}
+
+
+.work--section--container {
+  display: grid;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 42.6px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.work--section--heading--container {
+  text-align: center;
+  /* Center the heading */
+  margin-bottom: 40px;
+  /* Space below the heading */
+  display: flex;
+    flex-direction: column;
+    /* Ensures title and resume are stacked */
+    align-items: flex-start;
+    /* Aligns content to the left */
+    gap: 10px;
+    /* Adds spacing between title and resume */
+    margin-bottom: 20px;
+    /* Adjust as needed to control space below the container */
+}
+
+.work--section--heading--resume {
+  color: var(--mutedblue);
+  margin-top: 30px;
+  padding-left: 8px;
+
+}
+
+.work--section--heading--resume a {
+  color: var(--white);
+  text-decoration: none;
+      background-color: var(--darkgreen);
+      /* Highlighted background color */
+      padding: 0px 4px;
+      /* Add slight padding for highlight visibility */
+      transition: background-color 0.3s ease;
+      /* Smooth transition for hover effect */
+  border-radius: 4px;
+
+
+}
+
+.work--section--heading--resume a:hover {
+  color: var(--darkgreen);
+  /* Keep text color dark green */
+  background-color: transparent;
+  /* Remove highlight on hover */
+  text-decoration: none;
+}
+
+
+
+
+.work--section--content--container {
+  flex: 3;
+    /* Adjust container size */
+    display: flex;
+    flex-direction: column;
+    /* Align cards vertically */
+    gap: 30px;
+    /* Space between cards */
+    width: 100%;
+    /* Ensure full-width layout */}
+
+.work--section--card {
+  display: flex;
+  background-color: var(--aliceblue);
+  border-radius: 10px;
+  /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow */
+  padding: 20px;
+  gap: 15px;
+  /* Space between logo and content */
+}
+
+.work--section--logo img {
+  width: 60px;
+  /* Logo size */
+  height: 60px;
+  border-radius: 10px;
+  /* Round logo edges */
+  object-fit:contain; 
+  /* Ensure the logo fits the area */
+}
+
+.work--section--card--content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.work--section--timeline {
+  font-size: 1rem;
+  color: var(--mutedblue);
+  /* Subtle gray */
+  margin-bottom: 5px;
+  font-family: "PT Serif", serif;
+}
+
+.work--section--company {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: var(--black);
+  /* Darker color for emphasis */
+  margin-bottom: 5px;
+  font-family: "Marcellus", serif;
+}
+
+.work--section--role {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--mossgreen);
+  /* Slightly lighter than company */
+  margin-bottom: 10px;
+}
+
+.work--section--description {
+  font-size: 0.9rem;
+  color: var(--black);
+  /* Subtle gray for description */
+  line-height: 1.4;
+}
+/* Work Section Style Ends */
+
+/* About Section Style */
+.about--section {
+  display: flex;
+  padding: 149.33px 85.33px;
+  padding-top: 0px;
+  /* Matching Projects section spacing */
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 106.667px;
+  /* Match Projects section gap */
+}
+
+.about--section--title {
+  color: var(--darkgreen);
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 77px;
+  /* Same as project section title */
+  /* Add a small margin below the title */
+}
+
+.about--section--content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 150px;
+  /* Space between image and description */
+}
+
+.about--section--img {
+  width: 450px;
+  /* Adjust image size */
+  height: 540px;
+  /* Keep it square */
+  /* Add rounded edges */
+  object-fit: cover;
+  /* Ensures the image fits nicely */
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow */
+}
+
+.about--section--description {
+  color: var(--mutedblue);
+  font-size: 18px;
+  /* Slightly larger for readability */
+  font-weight: 400;
+  line-height: 1.8;
+  /* Comfortable line spacing */
+  max-width: 600px;
+  /* Prevent the text from stretching too wide */
+}
+
+
+
+/* About Section Style Ends */
+
+/* Footer Style */
+
+.footer--container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  padding: 15px 85.333px 15px 85.333px;
+  /* Space inside the footer */
+  background-color: var(--darkgreen);
+  /* Background color */
+  color: var(--white);
+  /* Text color */
+  font-family: "PT Serif", serif;
+  /* Apply a serif font */
+  border-top: 1px solid #e5e5e5;
+  /* Add a light border at the top */
+}
+
+.footer--link--container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  color: var(--white);
+  /* Center the content */
+  padding: 20px 0;
+}
+
+.footer--link--container>div:first-child h1 {
+    color: var(--white);
+}
+
+.footer--link--container>div:first-child p {
+  font-style: italic;
+  /* Make the subtitle italic */
+  font-size: 1rem;
+  /* Size of the subtitle */
+  margin: 10px 0 0;
+}
+
+/* Email Link */
+.footer--social--icon a {
+  display: block;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+.footer--social--icon a:hover {
+  text-decoration: underline;
+}
+
+/* Social Media Icons */
+.footer--social--icon ul {
+  display: flex;
+  gap: 20px;
+  /* Space between the icons */
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.footer--social--icon ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer--social--icon ul li a svg {
+  width: 32px;
+  height: 32px;
+  fill: var(--white);
+  /* Default icon color */
+  transition: fill 0.3s ease;
+}
+
+.footer--social--icon ul li a:hover svg {
+  fill: #0073e6;
+  /* Change icon color on hover */
+}
+/* Footer Style Ends */
+
+
+
+
+

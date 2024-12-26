@@ -1,0 +1,76 @@
+{
+    "projects": [
+        {
+            "id": "1", 
+            "src": "./img/wifi-router.png",
+            "title": "Static Router",
+            "description": "Software-defined static router with IP and ARP support, including custom ARP cache and routing table logic."
+        },
+        {
+            "id": "2", 
+            "src": "./img/online-streaming.png",
+            "title": "DASH Video Proxy",
+            "description": "Video Proxy Server with Dynamic Adaptive Streaming over HTTP (DASH) and DNS Server supporting concurrent video streaming requests from single and multiple clients."
+        },
+        {
+            "id": "3", 
+            "src": "./img/search.png",
+            "title": "Search Engine Clone",
+            "description": "Scalable search engine and MapReduce infrastructure that delivers real-time results for 3,000 page network."
+        },
+        {
+            "id": "4", 
+            "src": "./img/stock-market.png",
+            "title": "Stocks Visualizer",
+            "description": "Stock screener and trading dashboard displaying daily and minute data charts for 4,000 stocks using IEX Cloud API."
+        }
+    ],
+    "experiences": [
+        {
+            "id": "1",
+            "logo": "./img/samsara_logo.jpg",
+            "company": "Samsara",
+            "role": "Software Engineering Intern",
+            "timeline": "May - Aug 2024",
+            "description":"Full stack engineer focused on enhancing hardware exchange and installation flow UX on platform.",
+            "skills": ["GoLang", "GraphQL", "Typescript"]
+        },
+        {
+            "id": "2",
+            "logo": "./img/michigan.jpg",
+            "company": "Data Structures & Algorithms (EECS 281), University of Michigan",
+            "role": "Instructional Aide",
+            "timeline": "Jan 2023 - present",
+            "description":"Help teach 1000+ students by leading labs, holding office hours, and supporting exam preparation.",
+            "skills": []
+        },
+        {
+            "id": "3",
+            "logo": "./img/michigan.jpg",
+            "company": "University of Michigan College of Engineering",
+            "role": "Peer Mentor",
+            "timeline": "Aug 2024 - present",
+            "description":"Mentor first-year engineering students, bolstering early-career opportunities and community.",
+            "skills": []
+        },
+        {
+            "id": "4",
+            "logo": "./img/auxano_technology_consultants_logo.jpg",
+            "company": "Auxano Technology Consultants",
+            "role": "Software Engineering Intern",
+            "timeline": "May - Aug 2023",
+            "description":"Added security and data cleaning / cross-referencing automation, increasing dataset coverage by 28%.",
+            "skills": ["SQL", "ASP.NET"]
+        },
+        {
+            "id": "5",
+            "logo": "./img/atlas_digital_um_logo.jpg",   
+            "company": "Atlas Digital Consulting Club",
+            "role": "Project Advisor, Project Manager, Software Engineer",
+            "timeline": "Aug 2022 - Dec 2023",
+            "description":"Held various roles across diverse projects, including AI-driven systems for professional development and full-stack chart functionality for an existing product .",
+            "skills": ["OpenCV", "spaCy NLP", "Python", "Deepgram"]
+        }
+
+    ]
+}
